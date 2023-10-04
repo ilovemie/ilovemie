@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+	float xA, yA, xB, yB, xC, yC, ab, bc, ac, C, p, S;
+	printf("Hay nhap toa do A:");
+	scanf("%f%f",&xA,&yA);
+	printf("Hay nhap toa do B:");
+	scanf("%f%f",&xB,&yB);
+	printf("Hay nhap toa do C:");
+	scanf("%f%f",&xC,&yC);
+	ab=sqrt(pow(xA-xB,2)+pow(yA-yB,2));
+	ac=sqrt(pow(xA-xC,2)+pow(yA-yC,2));
+	bc=sqrt(pow(xC-xB,2)+pow(yC-yB,2));
+	C=ab+bc+ac;
+	p=C/2;
+	S=sqrt(p*(p-ab)*(p-ac)*(p-bc));
+	printf("Chu vi cua tam giac tren la:%.2f\n",C);
+	printf("Dien tich cua tam giac tren la:%.2f",S);
+}
