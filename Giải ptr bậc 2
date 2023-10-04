@@ -1,0 +1,17 @@
+#include <math.h>
+#include <stdio.h>
+int main(){
+
+	float a, b, x;
+	printf("Hay nhap a va b:");
+	scanf("%f%f",&a,&b);
+	if	(a==0)
+		printf("Vui long nhap lai so a");
+	else{
+	 
+		x=-b/a;
+		printf("Nghiem cua phuong trinh la:%.2f",x);
+	}
+	
+}
+	
