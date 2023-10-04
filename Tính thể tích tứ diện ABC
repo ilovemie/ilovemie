@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+	float h, xA, yA, xB, yB, xC, yC, ab, bc, ac, C, S, p, V;
+	printf("Hay nhap toa do A:");
+	scanf("%f%f",&xA,&yA);
+	printf("Hay nhap toa do B:");
+	scanf("%f%f",&xB,&yB);
+	printf("Hay nhap toa do C:");
+	scanf("%f%f",&xC,&yC);
+	printf("Hay nhap chieu cao cua tu dien:");
+	scanf("%f",&h);
+	ab=sqrt(pow(2,xA-xB)+pow(2,yA-yB));
+	ac=sqrt(pow(2,xA-xC)+pow(2,yA-yC));
+	bc=sqrt(pow(2,xC-xB)+pow(2,yC-yB));
+	C=ab+bc+bc;
+	p=C/2;
+	S=sqrt(p*(p-ab)*(p-ac)*(p-bc));
+	V= (h/3*S);
+	printf("The tich cua tu dien la:%.2f",V);
+}
