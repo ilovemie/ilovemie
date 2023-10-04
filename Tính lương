@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+	int main(){
+		float x, m;
+		char str[30];
+		printf("Hay nhap ho va ten:");
+		fgets(str, sizeof(str), stdin);
+		printf("Hay nhap he so luong:");
+		scanf("%f",&x);
+		m=x-(x*1,5/100)-(x*1/100)-(x*1/100);
+		printf("Ho va Ten:%s",str);
+		printf("So tien linh duoc la:%.0f",m);
+	}
