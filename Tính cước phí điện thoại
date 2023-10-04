@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+ int main(){
+ 	float n, x, m;
+ 	printf("Hay nhap thoi gian goi theo giay va cuoc phi cho moi giay goi:");
+ 	scanf("%f%f",&n,&x);
+ 	if (n<0)
+ 		printf("Vui long nhap lai thoi gian goi");
+ 	else if (x<0)
+ 		printf("Vui long nhap lai cuoc phi");
+ 	else {
+ 		m=n/6*x;
+ 		printf("Cuoc phi cho cuoc goi la:%.2f",m);
+}
+ }
